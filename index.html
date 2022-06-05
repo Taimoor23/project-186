@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="//unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+    <script src="//unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+  <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <title>Shooting game in VR!</title>
+  </head>
+  <body>
+    <a-scene id="scene" inspector-plugin-recast>
+      <!--assets-->
+      <a-assets>
+      <a-asset-item id="lego-batman" src="./assets/batman/lego_batman_3d_model__from_the_lego_batman/scene.gltf"></a-asset-item>
+      <a-asset-item id="lego-ironman" src="./assets/Ironman/lego_iron_man/scene.gltf"></a-asset-item>
+      <a-asset-item id="lego-batmobile" src="./assets/Batman/batmobile_1989/scene.gltf"></a-asset-item>
+      <a-asset-item id="lego-hulkbuster" src="./assets/Ironman/hulkbuster/scene.gltf"></a-asset-item>
+      </a-assets> 
+      <!--Environment-->
+      <a-entity id="environment" environment="preset:starry;skyType:atmosphere;lighting:point;"></a-entity>
+      <!--light-->
+      <a-entity light="type:hemisphere;color:yellow;intensity:0.5"></a-entity>
+      
+
+      <!--camera and cursor-->
+      <a-cursor>
+        <!--Batman-->
+        <a-entity
+        id="batman"
+        gltf-model="#lego-batman"
+        position="-2 0 -3"
+        rotation="0 0 0"
+        scale="0.05 0.05 0.05"
+        >
+        </a-entity>      
+        <!--Ironman-->
+        <a-entity
+        id="ironman"
+        gltf-model="#lego-ironman"
+        position="1 0 -3"
+        rotation="0 0 0"
+        scale="0.05 0.05 0.05"
+        >
+        </a-entity>
+        <a-entity
+        id="hulkbuster"
+        gltf-model="#lego-hulkbuster"
+        position="2 0 -3"
+        rotation="0 130 0"
+        scale="0.0125 0.0125 0.0125"
+        >
+        </a-entity>
+        <a-entity
+        id="batmobile"
+        gltf-model="#lego-batmobile"
+        position="-5 0 -3"
+        rotation="0 45 0"
+        scale="1 1 1"
+        >
+        </a-entity>
+        
+      <a-entity 
+        id="camera" 
+        position="2 -1.60 2"
+        wasd-controls 
+        look-controls="pointerLockEnabled:false"
+      ></a-entity>
+    </a-cursor>
+    </a-scene>
+  </body>
+  </html>

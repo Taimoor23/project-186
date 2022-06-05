@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hulkbuster
+* source:	https://sketchfab.com/3d-models/hulkbuster-df5cb1a239f24919b6e62a82beabecf7
+* author:	GranD (https://sketchfab.com/grandFX)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hulkbuster" (https://sketchfab.com/3d-models/hulkbuster-df5cb1a239f24919b6e62a82beabecf7) by GranD (https://sketchfab.com/grandFX) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
